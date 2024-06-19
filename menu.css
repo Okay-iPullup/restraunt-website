@@ -1,0 +1,96 @@
+.container                      /*page details*/
+{
+    margin-top: 80px;
+    padding: 1.5em;
+}
+
+.menu                           /*font size+font style of menu*/
+{
+    font-family: cursive;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+}
+
+.menu-group-head                /*heading of the menu gorup*/
+{
+    margin: 0;
+    text-shadow: 1px 1px purple;
+    color: hotpink;
+    padding-bottom: 1em;
+    border-bottom: 2px solid hotpink;       /*creates a line under the heading*/
+}
+
+.menu-group                     /*displays in the form of a grid*/
+{
+    display: grid;
+    background-color: rgba(48, 48, 48, 0.5); 
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item
+{
+    display: flex;
+}
+
+.menu-item-img
+{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    border: hotpink 2px solid;
+    border-radius: 25px;
+}
+
+.menu-item-text
+{
+    flex-grow: 1;
+    padding: 2%;
+}
+
+.menu-item-head
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-name
+{
+    color: hotpink;
+    margin-right: 1.5em;
+}
+
+.menu-item-desc
+{
+    color: pink;
+    line-height: 1.6;
+}
+
+.price
+{
+    color: hotpink;
+}
+
+@media screen and (min-width: 992px)        /*for when the screen is bigger than 992px*/
+{
+    .menu
+    {
+         font-size: 16px;
+    }
+
+    .menu-group
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-img
+    {
+        width: 125px;
+        height: 125px; 
+    }
+}

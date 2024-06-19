@@ -1,0 +1,8 @@
+#home{
+    margin: 5%;
+    color: pink;
+    position: absolute;
+    text-shadow: 3px 3px purple;
+    font-family: cursive;
+    font-size: 40px;
+}
